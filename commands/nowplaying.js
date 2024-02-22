@@ -20,7 +20,6 @@ module.exports = {
       embed.setTitle(track.name)
       embed.setDescription(`> **Audio** \`%${queue.volume}\`
 > **Duration :** \`${track.formattedDuration}\`
-> **URL :** **${track.url}**
 > **Loop Mode :** \`${queue.repeatMode ? (queue.repeatMode === 2 ? 'All Queue' : 'This Song') : 'Off'}\`
 > **Filter**: \`${queue.filters.names.join(', ') || 'Off'}\`
 > **By :** <@${track.user.id}>`);
